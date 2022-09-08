@@ -3,7 +3,11 @@
 
 # # Hydraulics and Overflow
 # 
-# In Wikipedia, the definition of [hydraulics](https://en.wikipedia.org/wiki/Hydraulics) (from Greek: Υδραυλική) is a technology and applied science using engineering, chemistry, and other sciences involving the mechanical properties and use of liquids. But 
+# In Wikipedia, the definition of [hydraulics](https://en.wikipedia.org/wiki/Hydraulics) (from Greek: Υδραυλική) is a technology and applied science using engineering, chemistry, and other sciences involving the mechanical properties and use of liquids. 
+# 
+# ![hydraulic definition](https://upload.wikimedia.org/wikipedia/commons/d/d8/Hydraulics_and_other_studies_%28en%29.svg)
+# 
+# But 
 # > what do geophysicists mean when they talk about hydraulics and why should one listen? - Pratt and Whithead (2008)
 # 
 # For me, I speak the ability of topography (ocean passages and straits) that renders waves to be significant enough to interact with flow, eventually regulate the flow structure as well as volume flux. 
@@ -11,6 +15,9 @@
 # Watch the below video: 
 # 
 # [![hydraulics in a tank](https://img.youtube.com/vi/nX6aemsdFIo/0.jpg)](https://www.youtube.com/watch?v=nX6aemsdFIo "hydraulics in a tank")
+# 
+# 
+# 
 
 # ## Hydraulic Control
 # 
@@ -18,21 +25,29 @@
 # 
 # ### Theory
 # 
-# ![Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif](Shallow_water_wave.gif "Shallow Water Wave")
+# <figure>
+#     <img src="hydraulics/sand_wave_Guam_vertical.jpg" 
+#          width="400" 
+#          alt="">
+#     <figcaption>Sand Ripples by S.Tan, Alupang Beach Tower, Guam.</figcaption>
+# </figure>
 # 
-# ![Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif](Deep_water_wave.gif "Deep Water Wave")
+# ![Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif](hydraulics/Shallow_water_wave.gif "Shallow Water Wave")
+# 
+# ![Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif](hydraulics/Deep_water_wave.gif "Deep Water Wave")
+# 
+# 
+# Shallow water wave speed
+# 
+# $$
+# c=\sqrt{gH}
+# $$
+# 
 # 
 # ### Overflow applications
 # 
 # 
-# 
-# 
-# You can also $add_{math}$ and
-# 
-# $$
-# math^{blocks}
-# $$
-# 
+
 # or
 # 
 # $$

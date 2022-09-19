@@ -33,7 +33,7 @@
 # </figure>
 # 
 # <figure>
-#     <a title="Fig. 1 in Bryden and Nurser (2003)" href="https://journals.ametsoc.org/view/journals/phoc/33/8/1520-0485_2003_033_1870_eosmoo_2.0.co_2.xml"><img width="480" alt="Ocean basins divided by straits" src="hydraulics/Fig1_Bryden_Nurser2003.png"></a>
+#     <a title="Fig. 1 in Bryden and Nurser (2003)" href="https://journals.ametsoc.org/view/journals/phoc/33/8/1520-0485_2003_033_1870_eosmoo_2.0.co_2.xml"><img width="480" alt="Ocean basins divided by straits" src="../hydraulics/Fig1_Bryden_Nurser2003.png"></a>
 #     <figcaption>Fig. 1 in Bryden and Nurser (2003): Schematic model for the effects of strait mixing on the properties of bottom water. </figcaption>
 # </figure>
 # 
@@ -45,21 +45,21 @@
 # #### Shallow water waves
 # 
 # <figure>
-#     <img src="hydraulics/sand_wave_Guam_vertical.jpg" 
+#     <img src="../hydraulics/sand_wave_Guam_vertical.jpg" 
 #          width="400" 
 #          alt="">
 #     <figcaption>Sand Ripples by S.Tan, Alupang Beach Tower, Guam.</figcaption>
 # </figure>
 # 
 # <figure>
-#     <img src="hydraulics/Shallow_water_wave.gif" 
+#     <img src="../hydraulics/Shallow_water_wave.gif" 
 #          width="400" 
 #          alt="">
 #     <figcaption>Shallow Water Wave, Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif.</figcaption>
 # </figure>
 # 
 # <figure>
-#     <img src="hydraulics/Deep_water_wave.gif" 
+#     <img src="../hydraulics/Deep_water_wave.gif" 
 #          width="400" 
 #          alt="">
 #     <figcaption>Deep Water Wave, Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif.</figcaption>
@@ -91,13 +91,13 @@
 # 
 # #### Subcritical, critical, supercritical
 # <figure>
-#     <img width="960" alt="hydraulic transition from subcritical to critical to supercritical" src="hydraulics/hydraulic_transition.png">
+#     <img width="960" alt="hydraulic transition from subcritical to critical to supercritical" src="../hydraulics/hydraulic_transition.png">
 #     <figcaption>Hydraulic transition from subcritical to critical to supercritical at the sill, from supercritical to subcritical crossing the dissipative hydraulic jump. </figcaption>
 # </figure>
 # 
 # <figure>
 #     <a title="Hydraulic control illustration by Dr. Mirjam S. Glessmer" href="https://mirjamglessmer.com/tag/hydraulic-jump/">
-#     <video width="480" controls src="hydraulics/weir_pinnau_2016.mp4">animation</video></a>
+#     <video width="480" controls src="../hydraulics/weir_pinnau_2016.mp4">animation</video></a>
 #     <figcaption>Wave illustrations by Mirjam S. Glessmer, https://mirjamglessmer.com/2016/02/11/observing-hydrodynamic-phenomena-on-a-creek/</figcaption>
 # </figure>
 # 
@@ -107,7 +107,7 @@
 # $$ -->
 # 
 # <figure>
-#     <img width="480" alt="weir formula" src="hydraulics/weir_formula.png"></a>
+#     <img width="480" alt="weir formula" src="../hydraulics/weir_formula.png"></a>
 #     <figcaption>Weir formula: transport of a hydraulically controlled flow being a function of channel width $w$, reduced gravity $g'=\frac{\Delta \rho}{\rho_0}g$, and the height difference between the interface of the overflow and the sill top. </figcaption>
 # </figure>
 # 
@@ -126,7 +126,7 @@
 # #### Application 1: transport estimate
 # <figure>
 #     <a title="Fig. 2.1 in Morozov et al. (2021)" href="https://link.springer.com/book/10.1007/978-3-030-83074-8">
-#     <img width="480" alt="passages in the Atlantic Ocean" src="hydraulics/passage_Atlantic_Morozov2021.png"></a>
+#     <img width="480" alt="passages in the Atlantic Ocean" src="../hydraulics/passage_Atlantic_Morozov2021.png"></a>
 #     <figcaption>Fig. 2.1 in Morozov et al. (2021) Bottom topography and main deep cataracts of the Atlantic Ocean. Red and magenta ellipses show the cataracts related and not related to the propagation of Antarctic waters in the abyss of the World Ocean. The arrows show the general direction of the flow in the cataracts. Deep blue numerals in circles indicate: (1) Drake Passage, (2) Falkland Trough (3) Georgia Basin, (4) Guinea Basin, (5) Sierra Leone Basin, (6) Cape Verde Basin, (7) Guiana Basin, (8) Madeira Basin, (9) Iberian Basin, (10) West European Basin. Brown letters in circles indicate: (a) North Weddell Ridge, (b) Southwest Indian Ridge, (c) Islas Orcadas Rise, (d) Falkland Plateau, (e) Zapiola Ridge, (f) Shona Ridge, (g) Meteor Rise, (h) Agulhas Ridge (i) Newfoundland Bank. </figcaption>
 # </figure>
 # 
@@ -134,7 +134,7 @@
 # 
 # <figure>
 #     <a title="Denmark Strait topography changes" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2003pa000972">
-#     <img width="960" alt="Denmark Strait changes" src="hydraulics/weir_formula_history.png"></a>
+#     <img width="960" alt="Denmark Strait changes" src="../hydraulics/weir_formula_history.png"></a>
 #     <figcaption>Adapted from Fig. 1 in K$\ddot{o}$sters et al. (2003). Morden era allows more overflow flux. </figcaption>
 # </figure>
 # 
@@ -144,7 +144,7 @@
 
 # <figure>
 #     <a title="Canal Surfing in Munich" href="https://www.youtube.com/watch?v=zjZUqmHe838&t=2s">
-#     <video width="480" controls src="hydraulics/river_surfing.mp4">animation</video></a>
+#     <video width="480" controls src="../hydraulics/river_surfing.mp4">animation</video></a>
 #     <figcaption>Canal Surfing in Munich, notice the hydraulic jump.</figcaption>
 # </figure>
 # 

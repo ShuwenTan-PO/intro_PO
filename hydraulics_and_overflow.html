@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Hydraulics and Overflow &#8212; Intro to Physical Oceanography</title>
+    <title>Overflow - they are everywhere! &#8212; Intro to Physical Oceanography</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tropical Ocean and Indonesian Throughflow" href="tropical_ocean.html" />
+    <link rel="next" title="\(\beta\) effect is what makes the equator fascinating" href="tropical_ocean.html" />
     <link rel="prev" title="Welcome to my guest lectures on EESCGU4925" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -118,12 +118,15 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Hydraulics and Overflow
+   Overflow - they are everywhere!
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tropical_ocean.html">
-   Tropical Ocean and Indonesian Throughflow
+   <span class="math notranslate nohighlight">
+    \(\beta\)
+   </span>
+   effect is what makes the equator fascinating
   </a>
  </li>
  <li class="toctree-l1">
@@ -346,78 +349,114 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-control">
-   Hydraulic Control
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Overflow - they are everywhere!
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#theory">
-     Theory
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hydraulics-a-zoo-of-nonlinear-topographic-effects">
+   Hydraulics - a zoo of nonlinear topographic effects
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydraulic-control">
+     1. Hydraulic Control
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#shallow-water-waves">
-       Shallow water waves
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theory">
+       1) Theory
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#i-shallow-water-waves">
+         i) Shallow water waves
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ii-who-is-faster-the-currents-or-the-waves">
+         ii) Who is faster, the currents or the waves?
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#iii-subcritical-critical-supercritical">
+         iii) Subcritical, critical, supercritical
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#iv-weir-formula">
+         iv) Weir Formula
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#overflow-applications">
+       2) Overflow applications
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#i-application-1-transport-estimate">
+         i) Application 1: transport estimate
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ii-application-2-long-term-transport">
+         ii) Application 2: long-term transport
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydraulic-jump">
+     2. Hydraulic Jump
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shock-waves">
+       1) Shock waves
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#who-is-faster-the-currents-or-the-waves">
-       Who is faster, the currents or the waves?
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#subcritical-critical-supercritical">
-       Subcritical, critical, supercritical
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#weir-formula">
-       Weir Formula
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mixing-hotspot-in-the-ocean">
+       2) “Mixing hotspot” in the ocean
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#overflow-applications">
-     Overflow applications
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upstream-influence-optional">
+     3. Upstream Influence (optional)
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-1-transport-estimate">
-       Application 1: transport estimate
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#upstream-propagating-waves">
+       1) Upstream-propagating waves
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-2-long-term-transport">
-       Application 2: long-term transport
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ocean-basin-adjustment">
+       2) Ocean basin adjustment
       </a>
      </li>
     </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-jump">
-   Hydraulic Jump
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#to-ease-your-burning-curiosity">
    To ease your burning curiosity
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#books">
      Books
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#papers">
-     Papers
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#videos">
      Videos!
     </a>
@@ -433,7 +472,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Hydraulics and Overflow</h1>
+                <h1>Overflow - they are everywhere!</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -443,78 +482,114 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-control">
-   Hydraulic Control
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Overflow - they are everywhere!
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#theory">
-     Theory
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hydraulics-a-zoo-of-nonlinear-topographic-effects">
+   Hydraulics - a zoo of nonlinear topographic effects
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydraulic-control">
+     1. Hydraulic Control
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#shallow-water-waves">
-       Shallow water waves
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#theory">
+       1) Theory
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#i-shallow-water-waves">
+         i) Shallow water waves
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ii-who-is-faster-the-currents-or-the-waves">
+         ii) Who is faster, the currents or the waves?
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#iii-subcritical-critical-supercritical">
+         iii) Subcritical, critical, supercritical
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#iv-weir-formula">
+         iv) Weir Formula
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#overflow-applications">
+       2) Overflow applications
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#i-application-1-transport-estimate">
+         i) Application 1: transport estimate
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#ii-application-2-long-term-transport">
+         ii) Application 2: long-term transport
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hydraulic-jump">
+     2. Hydraulic Jump
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#shock-waves">
+       1) Shock waves
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#who-is-faster-the-currents-or-the-waves">
-       Who is faster, the currents or the waves?
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#subcritical-critical-supercritical">
-       Subcritical, critical, supercritical
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#weir-formula">
-       Weir Formula
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mixing-hotspot-in-the-ocean">
+       2) “Mixing hotspot” in the ocean
       </a>
      </li>
     </ul>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#overflow-applications">
-     Overflow applications
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upstream-influence-optional">
+     3. Upstream Influence (optional)
     </a>
     <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-1-transport-estimate">
-       Application 1: transport estimate
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#upstream-propagating-waves">
+       1) Upstream-propagating waves
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#application-2-long-term-transport">
-       Application 2: long-term transport
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#ocean-basin-adjustment">
+       2) Ocean basin adjustment
       </a>
      </li>
     </ul>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-jump">
-   Hydraulic Jump
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#to-ease-your-burning-curiosity">
    To ease your burning curiosity
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#books">
      Books
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#papers">
-     Papers
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#videos">
      Videos!
     </a>
@@ -531,16 +606,34 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="hydraulics-and-overflow">
-<h1>Hydraulics and Overflow<a class="headerlink" href="#hydraulics-and-overflow" title="Permalink to this headline">#</a></h1>
-<p>From Wikipedia, the word “<a class="reference external" href="https://en.wikipedia.org/wiki/Hydraulics">hydraulics</a>” originates from the Greek word: ὑδραυλικός (hydraulikos), with its first part ὕδωρ (hydor) meaning water and the second part αὐλός (aulos) meaning pipe. It somewhat speaks the essence of hydraulics, which requires a moving fluid (through a pipe, over a dam, etc.) and thus is different from hydrostatics. When a fluid moves, especailly over topography, transformation may occur between kinetic energy and potential energy (may also between interal energy/heat when friction/viscosity is involved), which renders rich and exciting physical phenomena. In this lecture, we will discuss two classic hydraulic phenomena: <strong>hydraulic control</strong> and <strong>hydraulic jump</strong>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="overflow-they-are-everywhere">
+<h1>Overflow - they are everywhere!<a class="headerlink" href="#overflow-they-are-everywhere" title="Permalink to this headline">#</a></h1>
+<p>Not only a toilet can overflow! A <em>memory overflow</em> error can ruin a programmer’s morning; 21st century homosapiens deal with <em>information overflow</em> every single day; a river can overflow its banks and/or dams and cause flooding; etc. When we talk about overflow, the hidden subject we actually talk about is a constraint, which regulates the flow (<strong>hydraulic control</strong>). When the overflow goes beyond the capacity of the constraint, influences on the upstream reservoir (<strong>upstream influence</strong>) and chaos downstream (<strong>hydraulic jump</strong>) arise.</p>
+<p>Think about a perfect semester: you learn something at school, you discuss it with your professor and classmates, you spend the right amount of time working on your assignments, and most importantly, you digest the knowledge along the way, and do not feel overwhelmed or burnout. You feel comfortable and feel that you’ve learned something. That’s how a constraint can regulate a flow without causing chaos (weakly nonlinear).</p>
+<blockquote>
+<div><p>hydraulic control</p>
+</div></blockquote>
+<p>As you feel the course load becomes too heavy on you, you talk to the professor and your classmates. The professor receives feedback from the class and adjusts the courses accordingly and offer help. That’s how a constraint can influence the upstream condition.</p>
+<blockquote>
+<div><p>upstream influence</p>
+</div></blockquote>
+<p>In another scenario, you bite off more than you can chew and refuse to talk to anyone. You may feel overwhelmed, meltdown, or burnout. It’s not healthy nor safe cause that really stirred up chaos downstream (strongly nonlinear). Fortunately, by sending information upstream and changing the upstream condition, you can restore your status and regain the regularity of life.</p>
+<blockquote>
+<div><p>hydraulic jump</p>
+</div></blockquote>
+<div style="text-align: right"> *Disclaimer: Above are my not-that-great analogies and may not reflect the actual physics. </div></section>
+<section class="tex2jax_ignore mathjax_ignore" id="hydraulics-a-zoo-of-nonlinear-topographic-effects">
+<h1>Hydraulics - a zoo of nonlinear topographic effects<a class="headerlink" href="#hydraulics-a-zoo-of-nonlinear-topographic-effects" title="Permalink to this headline">#</a></h1>
+<!-- From Wikipedia, the word "[hydraulics](https://en.wikipedia.org/wiki/Hydraulics)" originates from the Greek word: ὑδραυλικός (hydraulikos), with its first part ὕδωρ (hydor) meaning water and the second part αὐλός (aulos) meaning pipe. It somewhat speaks the essence of hydraulics, which requires a moving fluid (through a pipe, over a dam, etc.) and thus is different from hydrostatics. When a fluid moves, especailly over topography, transformation may occur between kinetic energy and potential energy (may also between interal energy/heat when friction/viscosity is involved), which renders rich and exciting physical phenomena. In this lecture, we will discuss two classic hydraulic phenomena: **hydraulic control** and **hydraulic jump**.
+
 <figure>
     <a title="See page for author, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Table_of_Hydraulics_and_Hydrostatics,_Cyclopaedia,_Volume_1.jpg"><img width="280" alt="Hydraulic and Hydrostatic" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Table_of_Hydraulics_and_Hydrostatics%2C_Cyclopaedia%2C_Volume_1.jpg"></a>
     <figcaption>Hydraulic and Hydrostatic, See page for author, Public domain, via Wikimedia Commons.</figcaption>
 </figure>
+ -->
 <p>Watch the below video and notice how the water moves:</p>
 <p><a class="reference external" href="https://www.youtube.com/watch?v=nX6aemsdFIo"><img alt="hydraulics in a tank" src="https://img.youtube.com/vi/nX6aemsdFIo/0.jpg" /></a></p>
-<p>I hope you noticed the water level shows asymmetry: high to the left of the obstacle and low to the right of the obstacle. Or maybe you even noticed the Pingpong ball moves very slow to the left of the obstacle and cascades down as it crosses the obstacle. You may also noticed the “boiling” waters further downstreams where the Pingpang ball gets trapped and rolls. Then congratulations, you have identified some of the most important hydraulic phenomena:</p>
+<p>I hope you noticed the water level shows asymmetry: high on the left of the obstacle and low on the right of the obstacle. Or maybe you even noticed the ping pong ball moves very slowly on the left of the obstacle and cascades down as it crosses the obstacle. You may also notice the “boiling” waters further downstream where the Pingpang ball gets trapped and rolls. Then congratulations, you have identified some of the most important hydraulic phenomena:</p>
 <ul class="simple">
 <li><p>the flow is <strong>hydraulically controlled</strong> by topography</p></li>
 <li><p>the flow transfer from <strong>subcritical</strong> to <strong>critical</strong> to <strong>supercritical</strong> as it crosses the obstacle crest</p></li>
@@ -552,151 +645,234 @@ title="Print to PDF"
 </div></blockquote>
 <ul class="simple">
 <li><p>the ocean moves and the seabed is not flat: passages, channels, straits, …</p></li>
-<li><p>topography “controls” the volume flow rate and the reservoir level</p></li>
-<li><p>“mixing hotspot” due to hydraulic jump</p></li>
+<li><p>topography blocks the densest water from entering the next basin, draws down the interface level, causes “mixing hotspot” downstream, …, an important chain in the Meridional Overturning Circulation.</p></li>
 </ul>
-<figure>
+<!-- "controls" the volume flow rate and the reservoir level -->
+<figure class="align-default" id="directive-fig">
+<a class="reference internal image-reference" href="_images/vertical-movement-of-water-along-a-north-south-cross-section.png"><img alt="_images/vertical-movement-of-water-along-a-north-south-cross-section.png" src="_images/vertical-movement-of-water-along-a-north-south-cross-section.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Fig. 18.4.8 in <a class="reference external" href="https://opentextbc.ca/physicalgeology2ed/">Earle and Panchuk (2019)</a>: Schematics of major ocean masses, the ocean bottom in the schematics is flat, which is not true.</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="_images/Fig1_Bryden_Nurser2003.png"><img alt="_images/Fig1_Bryden_Nurser2003.png" src="_images/Fig1_Bryden_Nurser2003.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Fig. 1 in <a class="reference external" href="https://journals.ametsoc.org/view/journals/phoc/33/8/1520-0485_2003_033_1870_eosmoo_2.0.co_2.xml">Bryden and Nurser (2003)</a>: Schematic model for the effects of strait mixing on the properties of bottom water, notice that basins are divided by ridges and connected by passages.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!-- <figure>
     <a title="Fig. 18.4.8 in Earle and Panchuk (2019)" href="https://opentextbc.ca/physicalgeology2ed/"><img width="480" alt="Flat bottom ocean not true" src="https://opentextbc.ca/physicalgeology2ed/wp-content/uploads/sites/298/2019/08/vertical-movement-of-water-along-a-north-south-cross-section.png"></a>
     <figcaption>Fig. 18.4.8 in Earle and Panchuk (2019): Schematics of major ocean masses, the ocean bottom in the schematics is flat, which is not true.  </figcaption>
-</figure>
-<figure>
-    <a title="Fig. 1 in Bryden and Nurser (2003)" href="https://journals.ametsoc.org/view/journals/phoc/33/8/1520-0485_2003_033_1870_eosmoo_2.0.co_2.xml"><img width="480" alt="Ocean basins divided by straits" src="/hydraulics/Fig1_Bryden_Nurser2003.png"></a>
+</figure> -->
+<!-- <figure>
+    <a title="Fig. 1 in Bryden and Nurser (2003)" href="https://journals.ametsoc.org/view/journals/phoc/33/8/1520-0485_2003_033_1870_eosmoo_2.0.co_2.xml"><img width="480" alt="Ocean basins divided by straits" src="hydraulics/Fig1_Bryden_Nurser2003.png"></a>
     <figcaption>Fig. 1 in Bryden and Nurser (2003): Schematic model for the effects of strait mixing on the properties of bottom water. </figcaption>
-</figure>
+</figure> -->
+<!-- ![fishy](hydraulics/Fr1.gif) --><!-- ![Fr=1 illustration by Dr. Mirjam S. Glessmer](hydraulics/Fr1.gif)
+
 <figure>
-    <img width="480" alt="Ocean basins divided by straits" src="../hydraulics/Fig1_Bryden_Nurser2003.png">
-    <figcaption>Fig. 1 in Bryden and Nurser (2003): Schematic model for the effects of strait mixing on the properties of bottom water. </figcaption>
-</figure><section id="hydraulic-control">
-<h2>Hydraulic Control<a class="headerlink" href="#hydraulic-control" title="Permalink to this headline">#</a></h2>
+    <a title="Fr=1 illustration by Dr. Mirjam S. Glessmer" href="https://mirjamglessmer.com/tag/hydraulic-jump/"><img width="480" alt="Fr = 1" src=hydraulics/Fr1.gif></a>
+    <figcaption>Fr=1 illustration by Dr. Mirjam S. Glessmer. </figcaption>
+</figure> --><section id="hydraulic-control">
+<h2>1. Hydraulic Control<a class="headerlink" href="#hydraulic-control" title="Permalink to this headline">#</a></h2>
 <section id="theory">
-<h3>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">#</a></h3>
-<section id="shallow-water-waves">
-<h4>Shallow water waves<a class="headerlink" href="#shallow-water-waves" title="Permalink to this headline">#</a></h4>
-<figure>
-    <img src="../hydraulics/sand_wave_Guam_vertical.jpg" 
+<h3>1) Theory<a class="headerlink" href="#theory" title="Permalink to this headline">#</a></h3>
+<section id="i-shallow-water-waves">
+<h4>i) Shallow water waves<a class="headerlink" href="#i-shallow-water-waves" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="_images/sand_wave_Guam_vertical.jpg"><img alt="_images/sand_wave_Guam_vertical.jpg" src="_images/sand_wave_Guam_vertical.jpg" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Sand Ripples by S.Tan, Alupang Beach Tower, Guam. As the bottom water particals contain much momentum for shallow water waves, they can move the sands back and forth and leave the “footprint” of waves.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="_images/Shallow_water_wave.gif"><img alt="_images/Shallow_water_wave.gif" src="_images/Shallow_water_wave.gif" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Shallow Water Wave, Animations by Kraaiennest, <a class="reference external" href="http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif">Wikimedia Commons, Creative Commons A S-A 3.0</a>.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="_images/Deep_water_wave.gif"><img alt="_images/Deep_water_wave.gif" src="_images/Deep_water_wave.gif" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Deep Water Wave, Animations by Kraaiennest, <a class="reference external" href="http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif">Wikimedia Commons, Creative Commons A S-A 3.0</a>.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!-- <figure>
+    <img src="hydraulics/sand_wave_Guam_vertical.jpg" 
          width="400" 
          alt="">
     <figcaption>Sand Ripples by S.Tan, Alupang Beach Tower, Guam.</figcaption>
 </figure>
-<figure>
-    <img src="../hydraulics/Shallow_water_wave.gif" 
+ -->
+<!-- <figure>
+    <img src="hydraulics/Shallow_water_wave.gif" 
          width="400" 
          alt="">
     <figcaption>Shallow Water Wave, Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif.</figcaption>
 </figure>
+
 <figure>
-    <img src="../hydraulics/Deep_water_wave.gif" 
+    <img src="hydraulics/Deep_water_wave.gif" 
          width="400" 
          alt="">
     <figcaption>Deep Water Wave, Animations by Kraaiennest, Wikimedia Commons, Creative Commons A S-A 3.0, http://commons.wikimedia.org/wiki/File:Deep_water_wave.gif and http://commons.wikimedia.org/wiki/File:Shallow_water_wave.gif.</figcaption>
-</figure>
+</figure> -->
 <p>Shallow water wave speed</p>
 <div class="math notranslate nohighlight">
 \[
 c=\sqrt{gH}
 \]</div>
 </section>
-<section id="who-is-faster-the-currents-or-the-waves">
-<h4>Who is faster, the currents or the waves?<a class="headerlink" href="#who-is-faster-the-currents-or-the-waves" title="Permalink to this headline">#</a></h4>
-<figure>
-    <video width="480" controls src="../hydraulics/Froude_dude.mov">animation</video>
+<section id="ii-who-is-faster-the-currents-or-the-waves">
+<h4>ii) Who is faster, the currents or the waves?<a class="headerlink" href="#ii-who-is-faster-the-currents-or-the-waves" title="Permalink to this headline">#</a></h4>
+<!-- <figure>
+    <video width="480" controls src="hydraulics/Froude_dude.mov">animation</video>
     <figcaption>From Australian Water School “Webinar: Froude, Dude!” https://awschool.com.au/training/webinar-froude-dude/</figcaption>
-</figure>
+</figure> -->
 <!-- <a title="See page for author, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Williams_Froude.jpeg"><img width="128" alt="Williams Froude" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Williams_Froude.jpeg"></a> -->
 <div class="math notranslate nohighlight">
 \[
 \text{Froude Number}: F_r = \frac{\text{wave speed}}{\text{flow speed}}
 \]</div>
-<figure>
-    <a title="Fr=1 illustration by Dr. Mirjam S. Glessmer" href="https://mirjamglessmer.com/tag/hydraulic-jump/"><img width="480" alt="Fr = 1" src="hydraulics/Fr1.gif"></a>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="_images/Fr1.gif"><img alt="_images/Fr1.gif" src="_images/Fr1.gif" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Fr=1 illustration by <a class="reference external" href="https://mirjamglessmer.com/tag/hydraulic-jump/">Dr. Mirjam S. Glessmer</a>.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!-- <figure>
+    <a title="Fr=1 illustration by Dr. Mirjam S. Glessmer" href="https://mirjamglessmer.com/tag/hydraulic-jump/"><img width="480" alt="Fr = 1" src=hydraulics/Fr1.gif></a>
     <figcaption>Fr=1 illustration by Dr. Mirjam S. Glessmer. </figcaption>
-</figure>
+</figure> -->
 </section>
-<section id="subcritical-critical-supercritical">
-<h4>Subcritical, critical, supercritical<a class="headerlink" href="#subcritical-critical-supercritical" title="Permalink to this headline">#</a></h4>
-<figure>
-    <img width="960" alt="hydraulic transition from subcritical to critical to supercritical" src="../hydraulics/hydraulic_transition.png">
+<section id="iii-subcritical-critical-supercritical">
+<h4>iii) Subcritical, critical, supercritical<a class="headerlink" href="#iii-subcritical-critical-supercritical" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="_images/hydraulic_transition.png"><img alt="_images/hydraulic_transition.png" src="_images/hydraulic_transition.png" style="width: 900px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Hydraulic transition from subcritical to critical to supercritical at the sill, from supercritical to subcritical crossing the dissipative hydraulic jump. At the critical section, <span class="math notranslate nohighlight">\(F_r\)</span>=1, the wave is stationary.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!-- <figure>
+    <img width="960" alt="hydraulic transition from subcritical to critical to supercritical" src="hydraulics/hydraulic_transition.png">
     <figcaption>Hydraulic transition from subcritical to critical to supercritical at the sill, from supercritical to subcritical crossing the dissipative hydraulic jump. </figcaption>
-</figure>
-<figure>
+</figure> -->
+<p><a class="reference external" href="https://vimeo.com/152074901"><img alt="hydraulics in a tank" src="_images/Weir_Pinnau_2016_Slide4.jpeg" /></a></p>
+<!-- <figure>
     <a title="Hydraulic control illustration by Dr. Mirjam S. Glessmer" href="https://mirjamglessmer.com/tag/hydraulic-jump/">
-    <video width="480" controls src="../hydraulics/weir_pinnau_2016.mp4">animation</video></a>
+    <video width="480" controls src="hydraulics/weir_pinnau_2016.mp4">animation</video></a>
     <figcaption>Wave illustrations by Mirjam S. Glessmer, https://mirjamglessmer.com/2016/02/11/observing-hydrodynamic-phenomena-on-a-creek/</figcaption>
-</figure>
+</figure> -->
 </section>
-<section id="weir-formula">
-<h4>Weir Formula<a class="headerlink" href="#weir-formula" title="Permalink to this headline">#</a></h4>
+<section id="iv-weir-formula">
+<h4>iv) Weir Formula<a class="headerlink" href="#iv-weir-formula" title="Permalink to this headline">#</a></h4>
 <!-- $$
 Q=(\frac{2}{3})^{\frac{3}{2}}wg^{\frac{1}{2}}\Delta z^{\frac{3}{2}}
 $$ -->
-<figure>
-    <img width="480" alt="weir formula" src="../hydraulics/weir_formula.png"></a>
-    <figcaption>Weir formula: transport of a hydraulically controlled flow being a function of channel width $w$, reduced gravity $g'=\frac{\Delta \rho}{\rho_0}g$, and the height difference between the interface of the overflow and the sill top. </figcaption>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="_images/weir_formula.png"><img alt="_images/weir_formula.png" src="_images/weir_formula.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Weir formula: transport of a hydraulically controlled flow being a function of channel width <span class="math notranslate nohighlight">\(w\)</span>, reduced gravity <span class="math notranslate nohighlight">\(g'=\frac{\Delta \rho}{\rho_0}g\)</span>, and the height difference between the interface of the overflow and the sill top.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
 </figure>
+<!-- <figure>
+    <img width="480" alt="weir formula" src="hydraulics/weir_formula.png"></a>
+    <figcaption>Weir formula: transport of a hydraulically controlled flow being a function of channel width $w$, reduced gravity $g'=\frac{\Delta \rho}{\rho_0}g$, and the height difference between the interface of the overflow and the sill top. </figcaption>
+</figure> -->
 <p>This allows oceanographers to estimate the transport of overflows without expensive and technically difficult velocity measurements.</p>
 <!-- print('Samoan Passage parameters for example: ')
 w = float(input("What's the channel width w [km]? "))
 g = float(input("What's the reduced gravity g' [ms^-2]? "))
 hu = float(input("What's the height difference between the upstream interface and the sill top h_u [m]? "))
 Q = (2/3)**(3/2)*w*1000*g**(1/2)*hu**(3/2)*1e-6 
-print(f"Estimated transport for hydraulically controlled flow = {Q} Sv") --></section>
+print(f"Estimated transport for hydraulically controlled flow = {Q} Sv") -->
+</section>
 </section>
 <section id="overflow-applications">
-<h3>Overflow applications<a class="headerlink" href="#overflow-applications" title="Permalink to this headline">#</a></h3>
-<section id="application-1-transport-estimate">
-<h4>Application 1: transport estimate<a class="headerlink" href="#application-1-transport-estimate" title="Permalink to this headline">#</a></h4>
-<figure>
-    <a title="Fig. 2.1 in Morozov et al. (2021)" href="https://link.springer.com/book/10.1007/978-3-030-83074-8">
-    <img width="480" alt="passages in the Atlantic Ocean" src="../hydraulics/passage_Atlantic_Morozov2021.png"></a>
-    <figcaption>Fig. 2.1 in Morozov et al. (2021) Bottom topography and main deep cataracts of the Atlantic Ocean. Red and magenta ellipses show the cataracts related and not related to the propagation of Antarctic waters in the abyss of the World Ocean. The arrows show the general direction of the flow in the cataracts. Deep blue numerals in circles indicate: (1) Drake Passage, (2) Falkland Trough (3) Georgia Basin, (4) Guinea Basin, (5) Sierra Leone Basin, (6) Cape Verde Basin, (7) Guiana Basin, (8) Madeira Basin, (9) Iberian Basin, (10) West European Basin. Brown letters in circles indicate: (a) North Weddell Ridge, (b) Southwest Indian Ridge, (c) Islas Orcadas Rise, (d) Falkland Plateau, (e) Zapiola Ridge, (f) Shona Ridge, (g) Meteor Rise, (h) Agulhas Ridge (i) Newfoundland Bank. </figcaption>
+<h3>2) Overflow applications<a class="headerlink" href="#overflow-applications" title="Permalink to this headline">#</a></h3>
+<section id="i-application-1-transport-estimate">
+<h4>i) Application 1: transport estimate<a class="headerlink" href="#i-application-1-transport-estimate" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="_images/passage_Atlantic_Morozov2021.png"><img alt="_images/passage_Atlantic_Morozov2021.png" src="_images/passage_Atlantic_Morozov2021.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Fig. 2.1 in <a class="reference external" href="https://link.springer.com/book/10.1007/978-3-030-83074-8">Morozov et al. (2021)</a> Bottom topography and main deep cataracts of the Atlantic Ocean. Red and magenta ellipses show the cataracts related and not related to the propagation of Antarctic waters in the abyss of the World Ocean. The arrows show the general direction of the flow in the cataracts. Deep blue numerals in circles indicate: (1) Drake Passage, (2) Falkland Trough (3) Georgia Basin, (4) Guinea Basin, (5) Sierra Leone Basin, (6) Cape Verde Basin, (7) Guiana Basin, (8) Madeira Basin, (9) Iberian Basin, (10) West European Basin. Brown letters in circles indicate: (a) North Weddell Ridge, (b) Southwest Indian Ridge, (c) Islas Orcadas Rise, (d) Falkland Plateau, (e) Zapiola Ridge, (f) Shona Ridge, (g) Meteor Rise, (h) Agulhas Ridge (i) Newfoundland Bank.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
 </figure>
+<!-- <figure>
+    <a title="Fig. 2.1 in Morozov et al. (2021)" href="https://link.springer.com/book/10.1007/978-3-030-83074-8">
+    <img width="480" alt="passages in the Atlantic Ocean" src="hydraulics/passage_Atlantic_Morozov2021.png"></a>
+    <figcaption>Fig. 2.1 in Morozov et al. (2021) Bottom topography and main deep cataracts of the Atlantic Ocean. Red and magenta ellipses show the cataracts related and not related to the propagation of Antarctic waters in the abyss of the World Ocean. The arrows show the general direction of the flow in the cataracts. Deep blue numerals in circles indicate: (1) Drake Passage, (2) Falkland Trough (3) Georgia Basin, (4) Guinea Basin, (5) Sierra Leone Basin, (6) Cape Verde Basin, (7) Guiana Basin, (8) Madeira Basin, (9) Iberian Basin, (10) West European Basin. Brown letters in circles indicate: (a) North Weddell Ridge, (b) Southwest Indian Ridge, (c) Islas Orcadas Rise, (d) Falkland Plateau, (e) Zapiola Ridge, (f) Shona Ridge, (g) Meteor Rise, (h) Agulhas Ridge (i) Newfoundland Bank. </figcaption>
+</figure> -->
 </section>
-<section id="application-2-long-term-transport">
-<h4>Application 2: long-term transport<a class="headerlink" href="#application-2-long-term-transport" title="Permalink to this headline">#</a></h4>
-<figure>
+<section id="ii-application-2-long-term-transport">
+<h4>ii) Application 2: long-term transport<a class="headerlink" href="#ii-application-2-long-term-transport" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="_images/passage_Atlantic_Morozov2021.png"><img alt="_images/passage_Atlantic_Morozov2021.png" src="_images/passage_Atlantic_Morozov2021.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Adapted from Fig. 1 in <a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2003pa000972">K<span class="math notranslate nohighlight">\(\ddot{o}\)</span>sters et al. (2003)</a>. The Denmark Strait is deeper submerged under water in morden era compared to the last glacial era, and thus allows more overflow flux.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<!-- <figure>
     <a title="Denmark Strait topography changes" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2003pa000972">
-    <img width="960" alt="Denmark Strait changes" src="../hydraulics/weir_formula_history.png"></a>
+    <img width="960" alt="Denmark Strait changes" src="hydraulics/weir_formula_history.png"></a>
     <figcaption>Adapted from Fig. 1 in K$\ddot{o}$sters et al. (2003). Morden era allows more overflow flux. </figcaption>
 </figure>
-</section>
+ --></section>
 </section>
 </section>
 <section id="hydraulic-jump">
-<h2>Hydraulic Jump<a class="headerlink" href="#hydraulic-jump" title="Permalink to this headline">#</a></h2>
-<figure>
+<h2>2. Hydraulic Jump<a class="headerlink" href="#hydraulic-jump" title="Permalink to this headline">#</a></h2>
+<section id="shock-waves">
+<h3>1) Shock waves<a class="headerlink" href="#shock-waves" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="mixing-hotspot-in-the-ocean">
+<h3>2) “Mixing hotspot” in the ocean<a class="headerlink" href="#mixing-hotspot-in-the-ocean" title="Permalink to this headline">#</a></h3>
+<!-- <figure>
     <a title="Canal Surfing in Munich" href="https://www.youtube.com/watch?v=zjZUqmHe838&t=2s">
-    <video width="480" controls src="../hydraulics/river_surfing.mp4">animation</video></a>
+    <video width="480" controls src="hydraulics/river_surfing.mp4">animation</video></a>
     <figcaption>Canal Surfing in Munich, notice the hydraulic jump.</figcaption>
 </figure>
+ --></section>
 </section>
-<section id="to-ease-your-burning-curiosity">
-<h2>To ease your burning curiosity<a class="headerlink" href="#to-ease-your-burning-curiosity" title="Permalink to this headline">#</a></h2>
+<section id="upstream-influence-optional">
+<h2>3. Upstream Influence (optional)<a class="headerlink" href="#upstream-influence-optional" title="Permalink to this headline">#</a></h2>
+<section id="upstream-propagating-waves">
+<h3>1) Upstream-propagating waves<a class="headerlink" href="#upstream-propagating-waves" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="ocean-basin-adjustment">
+<h3>2) Ocean basin adjustment<a class="headerlink" href="#ocean-basin-adjustment" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="to-ease-your-burning-curiosity">
+<h1>To ease your burning curiosity<a class="headerlink" href="#to-ease-your-burning-curiosity" title="Permalink to this headline">#</a></h1>
 <p>contact me! <a class="reference external" href="mailto:shuwent&#37;&#52;&#48;ldeo&#46;columbia&#46;edu">shuwent<span>&#64;</span>ldeo<span>&#46;</span>columbia<span>&#46;</span>edu</a></p>
 <ul class="simple">
 <li><p>for the pdf of materials</p></li>
 <li><p>to join my annual to decadal time scale book reading group</p></li>
 </ul>
 <section id="books">
-<h3>Books<a class="headerlink" href="#books" title="Permalink to this headline">#</a></h3>
+<h2>Books<a class="headerlink" href="#books" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/"><strong>Rotating Hydraulics - Nonlinear Topographic Effects in the Ocean and Atmosphere</strong> by Pratt and Whithead</a> <br /> - for hydraulics overview and ocean application: <em><a class="reference external" href="https://www2.whoi.edu/staff/lpratt/wp-content/uploads/sites/120/2019/06/PrattIntroFigsI1-I2_78844.pdf">Introduction</a></em>, <em><a class="reference external" href="https://www2.whoi.edu/staff/lpratt/wp-content/uploads/sites/120/2019/07/PrattSec2.14_11964.pdf">section 2.14</a></em> <br /> - for the essence of hydraulics (wave &amp; flow): <em>section 1.1-1.4</em>
 <br />
 <a class="reference external" href="https://link.springer.com/book/10.1007/978-3-030-83074-8"><strong>Bottom Gravity Currents and Overflows in Deep Channels of the Atlantic Ocean</strong> by Morozov et al.</a> <br /> - for a comprehensive review of ocean passages/straits and overflow
 <br />
+<a class="reference external" href="https://www.sciencedirect.com/book/9780750645522/descriptive-physical-oceanography"><strong>Descriptive Physical Oceanography, An Introduction</strong> by Talley et al.</a> <br /> - for a comprehensive introduction of oceanography, good for this course in general
+<br />
 <a class="reference external" href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781118032954"><strong>Linear and Nonlinear Waves</strong> by Whitham</a> <br /> - for those who wants to look into the math behind waves and hydraulics
 <br />
 <a class="reference external" href="https://assets.cambridge.org/97811084/81526/frontmatter/9781108481526_frontmatter.pdf"><strong>Topographic Effects in Stratified Flows</strong> by Baines</a> <br /> - a challenging book to read, no pdf, but I have a hard copy you can borrow from</p>
-</section>
-<section id="papers">
-<h3>Papers<a class="headerlink" href="#papers" title="Permalink to this headline">#</a></h3>
-<p><a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/grl.50684"><strong>Turbulent mixing and hydraulic control of abyssal water in the Samoan Passage</strong> by Alford et al.</a> <br /> - hydraulic control and jump found in Samoan Passage <br />
-<a class="reference external" href="https://minigcm.org/ba.pdf"><strong>Modelling the Föhn in the MIM Laboratory</strong> by Josef Schröttle</a> <br /> - undergrad thesis, great review on hydraulics
+<!-- 
+## Papers
+[**Turbulent mixing and hydraulic control of abyssal water in the Samoan Passage** by Alford et al.](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/grl.50684) <br /> - hydraulic control and jump found in Samoan Passage <br /> 
+[**Modelling the Föhn in the MIM Laboratory** by Josef Schröttle](https://minigcm.org/ba.pdf) <br /> - undergrad thesis, great review on hydraulics
 <br />
-<a class="reference external" href="https://www.mdpi.com/2073-4441/13/13/1733"><strong>Hydraulic Jump: A Brief History and Research Challenges</strong> by De Padova and Mossa</a> <br /> - for a brief history of hydraulic jump, from engineering perspectives</p>
+[**Hydraulic Jump: A Brief History and Research Challenges** by De Padova and Mossa](https://www.mdpi.com/2073-4441/13/13/1733) <br /> - for a brief history of hydraulic jump, from engineering perspectives
+ -->
 </section>
 <section id="videos">
-<h3>Videos!<a class="headerlink" href="#videos" title="Permalink to this headline">#</a></h3>
+<h2>Videos!<a class="headerlink" href="#videos" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="http://web.mit.edu/hml/ncfmf.html">National Committee for Fluid Mechanics Films (NCFMF)</a> (strongly recommended for anyone who are interested in fluid mechanics, art &amp; masterpiece) <br /> - for waves &amp; hydraulics <a class="reference external" href="https://www.youtube.com/watch?v=9hmjcIfy8wE&amp;list=PL0EC6527BE871ABA3&amp;index=19">Stratified Flow</a>, you will see the famous <strong><a class="reference external" href="https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Daugherty%2C%20Robert%20L%2E%20%28Robert%20Long%29%2C%201885%2D">Robert Long</a>’s towing experiment</strong>!</p>
-</section>
 </section>
 </section>
 
@@ -737,7 +913,7 @@ print(f"Estimated transport for hydraulically controlled flow = {Q} Sv") --></se
     <a class='right-next' id="next-link" href="tropical_ocean.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tropical Ocean and Indonesian Throughflow</p>
+        <p class="prev-next-title"><span class="math notranslate nohighlight">\(\beta\)</span> effect is what makes the equator fascinating</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

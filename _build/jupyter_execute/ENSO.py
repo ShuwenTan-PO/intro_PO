@@ -8,12 +8,12 @@
 # then you know something about it. \
 # — Lord Kelvin, 1883
 
-# ## Tale 1: We didn't see it coming.
+# ## Tale 1: We didn't see the El Ni$\tilde{n}o$ coming.
 # > The un-noticed 1982 El Ni$\tilde{n}$o
 
 # 
 
-# ## Tale 2: It's coming! Oops, false alarm.
-# > The failed 2014 El Ni$\tilde{n}$o and the different 2015 Ni$\tilde{n}$o
+# ## Tale 2: El Ni$\tilde{n}o$'s coming! Oops, false alarm.
+# > The failed 2014 El Ni$\tilde{n}$o and the odd 2015 Ni$\tilde{n}$o
 
 # 

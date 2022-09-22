@@ -3,11 +3,11 @@
 
 # # Tropical Oceans and Indonesian Throughflow
 
-# ## $\beta$ effect is what makes the equator fascinating
+# ## 1. $\beta$ effect is what makes the equator fascinating
 
-# ## Equatorial Currents & Indonesian Throughflow
+# ## 2. Equatorial Currents & Indonesian Throughflow
 
-# ## Equatorial Waves
+# ## 3. Equatorial Waves
 
 # In[ ]:
 

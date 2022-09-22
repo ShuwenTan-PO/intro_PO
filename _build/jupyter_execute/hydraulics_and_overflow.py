@@ -5,7 +5,7 @@
 
 # ## Overflow - they are everywhere!
 
-# Not only a toilet can overflow! A *memory overflow* error can ruin a programmer's morning; 21st century homosapiens deal with *information overflow* every single day; a river can overflow its banks and/or dams and cause flooding; etc. When we talk about overflow, the hidden subject we actually talk about is a constraint, which regulates the flow (**hydraulic control**). When the overflow goes beyond the capacity of the constraint, influences on the upstream reservoir (**upstream influence**) and chaos downstream (**hydraulic jump**) arise.
+# Not only a toilet can overflow! A *memory overflow* error can ruin a programmer's morning; 21st-century homo sapiens deal with *information overflow* every single day; a river can overflow its banks and/or dams and cause flooding; etc. When we talk about overflow, the hidden subject we actually talk about is a constraint, which regulates the flow (**hydraulic control**). When the overflow goes beyond the capacity of the constraint, influences on the upstream reservoir (**upstream influence**) and chaos downstream (**hydraulic jump**) arise.
 # 
 # Think about a perfect semester: you learn something at school, you discuss it with your professor and classmates, you spend the right amount of time working on your assignments, and most importantly, you digest the knowledge along the way, and do not feel overwhelmed or burnout. You feel comfortable and feel that you've learned something. That's how a constraint can regulate a flow without causing chaos (weakly nonlinear). 
 # > hydraulic control
@@ -40,7 +40,7 @@
 # 
 
 # But 
-# > what do geophysicists mean when they talk about hydraulics and why should one listen? - Pratt and Whithead (2008)
+# > what do geophysicists mean when they talk about hydraulics and why should one listen? <div style="text-align: right"> - [Pratt and Whithead (2008)](https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/) </div>
 # 
 # - the ocean moves and the seabed is not flat: passages, channels, straits, ...
 # - topography blocks the densest water from entering the next basin, draws down the interface level, causes "mixing hotspot" downstream, ..., an important chain in the Meridional Overturning Circulation.
@@ -72,6 +72,15 @@
 #     <figcaption>Fig. 1 in Bryden and Nurser (2003): Schematic model for the effects of strait mixing on the properties of bottom water. </figcaption>
 # </figure> -->
 # 
+# 
+# ```{figure} hydraulics/overflow_Atlantic_Pratt2008.png
+# ---
+# width: 600
+# name: directive-fig
+# ---
+# Fig.1.5 in [Pratt and Whitehead (2008)](https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/). Plot by T. McKee and R. Curry: Notice that the coldest part of the NADW generated in the Nordic Seas being blocked by the shallow Denmarks Strait (650 m), and the isopycnal drop after crossing the Denmarks Strait. However, since the Vema Channel is much deeper (4614 m), a general portion of the cold and dense AABW enters the Brazil Basin and fills the bottom of the basin. 
+# ```
+# 
 
 # <!-- ![fishy](hydraulics/Fr1.gif) -->
 
@@ -93,7 +102,7 @@
 # width: 300
 # name: directive-fig
 # ---
-# Sand Ripples by S.Tan, Alupang Beach Tower, Guam. As the bottom water particals contain much momentum for shallow water waves, they can move the sands back and forth and leave the "footprint" of waves.
+# Sand Ripples took in front of Alupang Beach Tower, Guam. As the bottom water particals contain much momentum for shallow water waves, they can move the sands back and forth and leave the "footprint" of waves.
 # 
 # ```
 # 
@@ -193,7 +202,18 @@
 #     <figcaption>Wave illustrations by Mirjam S. Glessmer, https://mirjamglessmer.com/2016/02/11/observing-hydrodynamic-phenomena-on-a-creek/</figcaption>
 # </figure> -->
 # 
-# ##### iv) Weir Formula
+# ##### iv) Hydraulic Regimes 
+# Waters can run over an obstacle freely if the obstacle is short enough. For a tall obstacle, hydraulic control may occur, asymmetry can be observed. Hydraulic jump at the lee side of the obstacle may occur. An even taller obstacle or a suddenly increased inflow may send a bore moving upstream and alter the upstream condition (see section 3). A very tall obstacle can block the entire flow. 
+# 
+# ```{figure} hydraulics/shark_hydraulics.png
+# ---
+# width: 900
+# name: directive-fig
+# ---
+# Oceanic whitetip shark took somewhere at 30$^{\circ}$N in the North Pacific. Do you see how the "shark hydraulics" in the upper panel resembles three different hydraulic regimes in [Baines (1995)](https://assets.cambridge.org/97811084/81526/frontmatter/9781108481526_frontmatter.pdf)? Also see section 1.7 in [Pratt and Whithead (2008)](https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/).
+# ```
+# 
+# ##### v) Weir Formula
 # <!-- $$
 # Q=(\frac{2}{3})^{\frac{3}{2}}wg^{\frac{1}{2}}\Delta z^{\frac{3}{2}}
 # $$ -->
@@ -241,7 +261,7 @@
 # 
 # ##### ii) Application 2: long-term transport
 # 
-# ```{figure} hydraulics/passage_Atlantic_Morozov2021.png
+# ```{figure} hydraulics/weir_formula_history.png
 # ---
 # width: 600
 # name: directive-fig
@@ -258,8 +278,40 @@
 
 # ### 2. Hydraulic Jump
 # #### 1) Shock waves
+# ```{figure} hydraulics/1024px-Hydraulic_jump_in_sink.jpeg
+# ---
+# width: 300
+# name: directive-fig
+# ---
+# [Wikimedia Commons, Creative Commons A S-A 3.0](https://commons.wikimedia.org/wiki/File:Hydraulic_jump_in_sink.jpg). A common example of a hydraulic jump as the fast flow from the faucet rapidly slowing and piling up on top of itself, essentially a shockwave. The jump is at the transition between the point where the circle appears still and where the turbulence is visible. 
+# ```
+# 
+# ```{figure} hydraulics/turtle_jump.JPG
+# ---
+# width: 600
+# name: directive-fig
+# ---
+# Tidal bore shot in Laniakea Beach, Honolulu. Note the "water wall" built at the turtle's face, the sediment and seaweed clouds and the water splashes suggest the turbulent nature of the bore.
+# ```
 # 
 # #### 2) "Mixing hotspot" in the ocean
+# 
+# ```{figure} hydraulics/Girton2019_Fig1.png
+# ---
+# width: 600
+# name: directive-fig
+# ---
+# Fig. 1 in [Girton et al. (2019)](https://tos.org/oceanography/article/flow-topography-interactions-in-the-samoan-passage). Overview of the Samoan Passage region with vectors showing transport measurements from lowered acoustic Doppler current profiler (LADCP).
+# ```
+# 
+# ```{figure} hydraulics/Carter2019_Fig7.png
+# ---
+# width: 600
+# name: directive-fig
+# ---
+# Fig. 7 in [Carter et al. (2019)](https://tos.org/oceanography/article/a-spatial-geography-of-abyssal-turbulent-mixing-in-the-samoan-passage). (b) Dissipation profiles from a 36-hour time series collected just downstream of the P5 sill (white lines in panel c). (c) Two along channel towed CTD/LADCP sections taken 17 months apart. See [Alford et al. (2013)](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/grl.50684) for details of track location. The left panel plots observations from the 2012 cruise and the right panel from the 2014 cruise.
+# ```
+# 
 
 # <!-- <figure>
 #     <a title="Canal Surfing in Munich" href="https://www.youtube.com/watch?v=zjZUqmHe838&t=2s">
@@ -269,25 +321,28 @@
 #  -->
 
 # ### 3. Upstream Influence (optional)
-# #### 1) Upstream-propagating waves
+# **Thought experiment (think first):** <br /> Suppose that the reservoir is fed by river runoff and drained at the same rate by the discharge over the dam. The whole system is in a steady state. Now somehow the elevation of the dam crest is raised. What would the system adjust to the change of topography?
 # 
-# #### 2) Ocean basin adjustment
+# > If the elevation of the dam crest is raised, the height of the reservoir surface above the dam is diminished and the volume outflow decreases. The river runoff now exceeds the outflow and the excess is stored in the reservoir. The reservoir level rises and eventually the original outflow rate is restored. The actual sequence of events may be a little more complicated than what we have described, but the result is essentially correct: the dam influences the time history of the discharge. <div style="text-align: right"> - Introduction, [Pratt and Whithead (2008)](https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/) </div>
+# 
+# I hope you get the idea of how a flow can get regulated by topography (i.e., hydraulic control) and how topography can exert *upstream influence*, meaning a permanent alteration of the upstream flow.
 
 # ## To ease your burning curiosity
 # contact me! shuwent@ldeo.columbia.edu
-# - for the pdf of materials
-# - to join my annual to decadal time scale book reading group
+# - for the pdf of materials and more books
+# - to watch waves and take photos of them
+# - to discuss and thought experiment
 # 
-# ### Books
+# ### Books!
 # [**Rotating Hydraulics \- Nonlinear Topographic Effects in the Ocean and Atmosphere** by Pratt and Whithead](https://www2.whoi.edu/staff/lpratt/textbook-on-rotating-hydraulics/) <br /> - for hydraulics overview and ocean application: *[Introduction](https://www2.whoi.edu/staff/lpratt/wp-content/uploads/sites/120/2019/06/PrattIntroFigsI1-I2_78844.pdf)*, *[section 2.14](https://www2.whoi.edu/staff/lpratt/wp-content/uploads/sites/120/2019/07/PrattSec2.14_11964.pdf)* <br /> - for the essence of hydraulics (wave \& flow): *section 1.1-1.4*
 # <br />
 # [**Bottom Gravity Currents and Overflows in Deep Channels of the Atlantic Ocean** by Morozov et al.](https://link.springer.com/book/10.1007/978-3-030-83074-8) <br /> - for a comprehensive review of ocean passages/straits and overflow
 # <br />
 # [**Descriptive Physical Oceanography, An Introduction** by Talley et al.](https://www.sciencedirect.com/book/9780750645522/descriptive-physical-oceanography) <br /> - for a comprehensive introduction of oceanography, good for this course in general
-# <br />
-# [**Linear and Nonlinear Waves** by Whitham](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118032954) <br /> - for those who wants to look into the math behind waves and hydraulics
 # <br /> 
 # [**Topographic Effects in Stratified Flows** by Baines](https://assets.cambridge.org/97811084/81526/frontmatter/9781108481526_frontmatter.pdf) <br /> - a challenging book to read, no pdf, but I have a hard copy you can borrow from
+# <br />
+# [**Linear and Nonlinear Waves** by Whitham](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118032954) <br /> - for those who wants to look into the math behind waves and hydraulics
 # 
 # <!-- 
 # ## Papers
@@ -297,8 +352,10 @@
 # [**Hydraulic Jump: A Brief History and Research Challenges** by De Padova and Mossa](https://www.mdpi.com/2073-4441/13/13/1733) <br /> - for a brief history of hydraulic jump, from engineering perspectives
 #  -->
 #  
-# ### Videos!
-# [National Committee for Fluid Mechanics Films (NCFMF)](http://web.mit.edu/hml/ncfmf.html) (strongly recommended for anyone who are interested in fluid mechanics, art \& masterpiece) <br /> - for waves \& hydraulics [Stratified Flow](https://www.youtube.com/watch?v=9hmjcIfy8wE&list=PL0EC6527BE871ABA3&index=19), you will see the famous **[Robert Long](https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Daugherty%2C%20Robert%20L%2E%20%28Robert%20Long%29%2C%201885%2D)'s towing experiment**!
+# ### Website!
+# [National Committee for Fluid Mechanics Films (NCFMF)](http://web.mit.edu/hml/ncfmf.html) <br /> - strongly recommended for anyone who are interested in fluid mechanics, art \& masterpiece <br /> - for waves \& hydraulics [Stratified Flow](https://www.youtube.com/watch?v=9hmjcIfy8wE&list=PL0EC6527BE871ABA3&index=19), you will see the famous **[Robert Long](https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Daugherty%2C%20Robert%20L%2E%20%28Robert%20Long%29%2C%201885%2D)'s towing experiment**!
+# <br /> 
+# [Dr. Mirjam S. Glessmer's blog for videos and more!](https://mirjamglessmer.com/tag/hydraulic-jump/) <br /> - hydraulic jumps, wave-watching, kitchen oceanography, a ture adventure!
 
 # In[ ]:
 

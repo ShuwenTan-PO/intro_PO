@@ -5,8 +5,8 @@
 # 
 
 # > When you can measure what you are speaking about and express it in numbers,
-# then you know something about it. \
-# — Lord Kelvin, 1883
+# then you know something about it. <div style="text-align: right"> — Lord Kelvin, 1883 </div>
+# 
 
 # ## Tale 1: We didn't see the El Ni$\tilde{n}o$ coming.
 # > The un-noticed 1982 El Ni$\tilde{n}$o

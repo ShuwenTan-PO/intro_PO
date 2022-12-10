@@ -1,0 +1,124 @@
+Traceback (most recent call last):
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/client.py", line 1112, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/client.py", line 553, in async_execute
+    await self.async_execute_cell(
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/client.py", line 857, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/stan/miniforge3/envs/goship/lib/python3.9/site-packages/nbclient/client.py", line 760, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+def wave_generator(x_series, t_0, param_wave):
+    import xarray as xr
+    y_ = np.zeros(len(x_series),)
+    y_ = param_wave['A']*np.cos(param_wave['omega']*t_0-param_wave['k']*x_series)
+    
+    # make into an xarray dataarray
+    y = xr.DataArray(y_, dims=['x'],
+                      coords={'x': x_series,
+                              't': t_0})
+    
+    return y
+
+# short rossby wave
+param_wave = {
+    'A' : 1, 
+    'k' : 1,
+}
+param_wave['omega'] = -1/param_wave['k']
+param_wave['c_ros'] = param_wave['omega']/param_wave['k']
+param_wave1 = param_wave.copy()
+
+param_wave = {
+    'A' : 1, 
+    'k' : 1.2,
+}
+param_wave['omega'] = -1/param_wave['k']
+param_wave['c_ros'] = param_wave['omega']/param_wave['k']
+param_wave2 = param_wave.copy()
+
+x_series = np.arange(-100,0,.01)
+t_0 = 1
+
+import holoviews as hv
+hv.HoloMap({t_0: hv.Curve(wave_generator(x_series, t_0, param_wave2), label='Label').opts(width=600) for t_0 in np.arange(0,40,1)}, 't')
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mValueError[0m                                Traceback (most recent call last)
+[0;32m/var/folders/sr/6_bkfhj929364hv72k5pf2jw0000gn/T/ipykernel_3524/2920919557.py[0m in [0;36m<module>[0;34m[0m
+[1;32m     32[0m [0;34m[0m[0m
+[1;32m     33[0m [0;32mimport[0m [0mholoviews[0m [0;32mas[0m [0mhv[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 34[0;31m [0mhv[0m[0;34m.[0m[0mHoloMap[0m[0;34m([0m[0;34m{[0m[0mt_0[0m[0;34m:[0m [0mhv[0m[0;34m.[0m[0mCurve[0m[0;34m([0m[0mwave_generator[0m[0;34m([0m[0mx_series[0m[0;34m,[0m [0mt_0[0m[0;34m,[0m [0mparam_wave2[0m[0;34m)[0m[0;34m,[0m [0mlabel[0m[0;34m=[0m[0;34m'Label'[0m[0;34m)[0m[0;34m.[0m[0mopts[0m[0;34m([0m[0mwidth[0m[0;34m=[0m[0;36m600[0m[0;34m)[0m [0;32mfor[0m [0mt_0[0m [0;32min[0m [0mnp[0m[0;34m.[0m[0marange[0m[0;34m([0m[0;36m0[0m[0;34m,[0m[0;36m40[0m[0;34m,[0m[0;36m1[0m[0;34m)[0m[0;34m}[0m[0;34m,[0m [0;34m't'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m/var/folders/sr/6_bkfhj929364hv72k5pf2jw0000gn/T/ipykernel_3524/2920919557.py[0m in [0;36m<dictcomp>[0;34m(.0)[0m
+[1;32m     32[0m [0;34m[0m[0m
+[1;32m     33[0m [0;32mimport[0m [0mholoviews[0m [0;32mas[0m [0mhv[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 34[0;31m [0mhv[0m[0;34m.[0m[0mHoloMap[0m[0;34m([0m[0;34m{[0m[0mt_0[0m[0;34m:[0m [0mhv[0m[0;34m.[0m[0mCurve[0m[0;34m([0m[0mwave_generator[0m[0;34m([0m[0mx_series[0m[0;34m,[0m [0mt_0[0m[0;34m,[0m [0mparam_wave2[0m[0;34m)[0m[0;34m,[0m [0mlabel[0m[0;34m=[0m[0;34m'Label'[0m[0;34m)[0m[0;34m.[0m[0mopts[0m[0;34m([0m[0mwidth[0m[0;34m=[0m[0;36m600[0m[0;34m)[0m [0;32mfor[0m [0mt_0[0m [0;32min[0m [0mnp[0m[0;34m.[0m[0marange[0m[0;34m([0m[0;36m0[0m[0;34m,[0m[0;36m40[0m[0;34m,[0m[0;36m1[0m[0;34m)[0m[0;34m}[0m[0;34m,[0m [0;34m't'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/accessors.py[0m in [0;36mpipelined_call[0;34m(*args, **kwargs)[0m
+[1;32m     43[0m [0;34m[0m[0m
+[1;32m     44[0m             [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 45[0;31m                 [0mresult[0m [0;34m=[0m [0m__call__[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m     46[0m [0;34m[0m[0m
+[1;32m     47[0m                 [0;32mif[0m [0;32mnot[0m [0min_method[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/accessors.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
+[1;32m    569[0m                 [0mparam[0m[0;34m.[0m[0mmain[0m[0;34m.[0m[0mparam[0m[0;34m.[0m[0mwarning[0m[0;34m([0m[0mmsg[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    570[0m [0;34m[0m[0m
+[0;32m--> 571[0;31m         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_dispatch_opts[0m[0;34m([0m [0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    572[0m [0;34m[0m[0m
+[1;32m    573[0m     [0;32mdef[0m [0m_dispatch_opts[0m[0;34m([0m[0mself[0m[0;34m,[0m [0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/accessors.py[0m in [0;36m_dispatch_opts[0;34m(self, *args, **kwargs)[0m
+[1;32m    573[0m     [0;32mdef[0m [0m_dispatch_opts[0m[0;34m([0m[0mself[0m[0;34m,[0m [0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    574[0m         [0;32mif[0m [0mself[0m[0;34m.[0m[0m_mode[0m [0;32mis[0m [0;32mNone[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 575[0;31m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_base_opts[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    576[0m         [0;32melif[0m [0mself[0m[0;34m.[0m[0m_mode[0m [0;34m==[0m [0;34m'holomap'[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    577[0m             [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_holomap_opts[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/accessors.py[0m in [0;36m_base_opts[0;34m(self, *args, **kwargs)[0m
+[1;32m    652[0m [0;34m[0m[0m
+[1;32m    653[0m         [0mkwargs[0m[0;34m[[0m[0;34m'clone'[0m[0;34m][0m [0;34m=[0m [0;32mFalse[0m [0;32mif[0m [0mclone[0m [0;32mis[0m [0;32mNone[0m [0;32melse[0m [0mclone[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 654[0;31m         [0;32mreturn[0m [0mself[0m[0;34m.[0m[0m_obj[0m[0;34m.[0m[0moptions[0m[0;34m([0m[0;34m*[0m[0mnew_args[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/data/__init__.py[0m in [0;36mpipelined_fn[0;34m(*args, **kwargs)[0m
+[1;32m    202[0m [0;34m[0m[0m
+[1;32m    203[0m             [0;32mtry[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 204[0;31m                 [0mresult[0m [0;34m=[0m [0mmethod_fn[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    205[0m                 [0;32mif[0m [0mPipelineMeta[0m[0;34m.[0m[0mdisable[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    206[0m                     [0;32mreturn[0m [0mresult[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/data/__init__.py[0m in [0;36moptions[0;34m(self, *args, **kwargs)[0m
+[1;32m   1210[0m     [0;34m@[0m[0mwraps[0m[0;34m([0m[0mDimensioned[0m[0;34m.[0m[0moptions[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1211[0m     [0;32mdef[0m [0moptions[0m[0;34m([0m[0mself[0m[0;34m,[0m [0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1212[0;31m         [0;32mreturn[0m [0msuper[0m[0;34m([0m[0mDataset[0m[0;34m,[0m [0mself[0m[0;34m)[0m[0;34m.[0m[0moptions[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1213[0m [0;34m[0m[0m
+[1;32m   1214[0m     [0;34m@[0m[0mwraps[0m[0;34m([0m[0mLabelledData[0m[0;34m.[0m[0mmap[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/core/dimension.py[0m in [0;36moptions[0;34m(self, clone, *args, **kwargs)[0m
+[1;32m   1277[0m             [0mexpanded_backends[0m [0;34m=[0m [0mopts[0m[0;34m.[0m[0m_expand_by_backend[0m[0;34m([0m[0moptions[0m[0;34m,[0m [0mbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   1278[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 1279[0;31m             [0mexpanded_backends[0m [0;34m=[0m [0;34m[[0m[0;34m([0m[0mbackend[0m[0;34m,[0m [0mopts[0m[0;34m.[0m[0m_expand_options[0m[0;34m([0m[0moptions[0m[0;34m,[0m [0mbackend[0m[0;34m)[0m[0;34m)[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   1280[0m [0;34m[0m[0m
+[1;32m   1281[0m         [0mobj[0m [0;34m=[0m [0mself[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m~/miniforge3/envs/goship/lib/python3.9/site-packages/holoviews/util/__init__.py[0m in [0;36m_expand_options[0;34m(cls, options, backend)[0m
+[1;32m    308[0m [0;34m[0m[0m
+[1;32m    309[0m         [0;32mif[0m [0;32mnot[0m [0mStore[0m[0;34m.[0m[0mrenderers[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 310[0;31m             raise ValueError("No plotting extension is currently loaded. "
+[0m[1;32m    311[0m                              [0;34m"Ensure you load an plotting extension with "[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    312[0m                              [0;34m"hv.extension or import it explicitly from "[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mValueError[0m: No plotting extension is currently loaded. Ensure you load an plotting extension with hv.extension or import it explicitly from holoviews.plotting before applying any options.
+ValueError: No plotting extension is currently loaded. Ensure you load an plotting extension with hv.extension or import it explicitly from holoviews.plotting before applying any options.
+
